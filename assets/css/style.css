@@ -14,6 +14,19 @@ body {
     color: #777;
 }
 
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main-content {
+    background-color: #fff;
+    padding: 10px 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 100px;
+}
+
 p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
@@ -124,29 +137,45 @@ form {
     color: #777;
 }
 
-.thumbnail {
+.work {
+    position: relative;
     float: left;
-    height: 200px;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
     width: 200px;
-    margin: 10px 35px 40px 0px;
-}
-
-#gallery {
-   width: 75%;
-}
-
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#main-content {
-    background-color: #fff;
-    padding: 10px 30px;
-    margin-top: 25px;
-    border: 1px solid #ddd;
-    margin-bottom: 100px;
-}
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
 
 @media screen and (max-width:980px) {
     .wrapper {
@@ -166,6 +195,21 @@ form {
 
     #logo {
         width: 40%;
+    }
+
+    #gallery {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 50%;
+        margin: 0;
+    }
+
+    .thumbnail img {
+        height: auto;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -194,8 +238,7 @@ form {
         padding: 0;
     }
 
-    #main-cointent {
-        margin-left: 10px;
-        margin-right: 10px;
+    .work {
+        width: 100%;
     }
 }
