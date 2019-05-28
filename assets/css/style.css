@@ -8,19 +8,6 @@
     display: block;
 }
 
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#main-content {
-    background-color: #fff;
-    padding: 10px 30px;
-    margin-top: 25px;
-    border: 1px solid #ddd;
-    margin-bottom: 100px;
-}
-
 body {
     margin: 0;
     background: url("../images/greyzz_@2X.png");
@@ -35,7 +22,7 @@ p {
 
 header {
     background-color: #fff;
-    border: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 #logo {
@@ -148,14 +135,67 @@ form {
    width: 75%;
 }
 
-@media and screen (max-width:980px;) {
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
 }
 
-@media and screen (max-width:768px;) {
+#main-content {
+    background-color: #fff;
+    padding: 10px 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 100px;
 }
 
-@media and screen (max-width:640px;) {
-    $headshot {
+@media screen and (max-width:980px) {
+    .wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    header .wrapper {
         width: 100%;
+    }
+
+    #logo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #headshot {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    header .wrapper {
+        width: 100%;
+    }
+
+    #logo {
+        width: 100%;
+        float: none;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #main-cointent {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
